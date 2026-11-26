@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muslima’s Happy Place ❤️</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Nunito:wght@400;600;800&display=swap">
+<style>
+:root{--ink:#fff4fb;--pink:#ff7eb6;--rose:#ffb3d4;--vio:#b58cff;--deep:#2a0f4d;--glass:rgba(255,255,255,.12);--sa:env(safe-area-inset-top,0px);--sb:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;overflow:hidden;color-scheme:dark}
+body{font:17px/1.6 Nunito,system-ui,sans-serif;color:var(--ink);background:linear-gradient(135deg,#3a1262,#7a2a8f,#d44f93,#5b2a9c);background-size:300% 300%;animation:bg 18s ease infinite}
+@keyframes bg{50%{background-position:100% 100%}}
+canvas{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+#stars{position:fixed;inset:0;z-index:0}
+#stars i{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.2;animation:tw 3s infinite}
+@keyframes tw{50%{opacity:.9;transform:scale(1.8)}}
+header{position:fixed;top:0;left:0;right:0;z-index:60;padding:calc(var(--sa) + 8px) 12px 6px;display:flex;gap:8px;align-items:center;justify-content:space-between;font-size:13px}
+.bar{position:fixed;top:0;left:0;right:0;height:4px;z-index:61;background:rgba(255,255,255,.15)}
+.bar b{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--rose),var(--vio),#fff);box-shadow:0 0 12px var(--pink);transition:width .7s}
+button,label.b{font:800 15px Nunito,sans-serif;color:var(--ink);border:1px solid rgba(255,255,255,.35);background:var(--glass);backdrop-filter:blur(10px);padding:11px 18px;border-radius:99px;cursor:pointer;transition:transform .2s,box-shadow .2s;display:inline-block}
+button:hover,label.b:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 0 22px rgba(255,126,182,.6)}
+button:active{transform:scale(.95)}
+button:focus-visible{outline:3px solid #fff}
+.sm{padding:7px 13px;font-size:13px}
+.big{background:linear-gradient(135deg,#ff7eb6,#b58cff);border:0;font-size:17px;padding:14px 26px;box-shadow:0 8px 28px rgba(255,126,182,.5)}
+nav{position:fixed;bottom:0;left:0;right:0;z-index:60;display:flex;justify-content:space-between;align-items:center;padding:8px 14px calc(var(--sb) + 10px);background:linear-gradient(transparent,rgba(30,8,60,.7))}
+#cnt{font:italic 600 20px 'Cormorant Garamond',serif}
+.page{position:fixed;inset:0;z-index:5;overflow-y:auto;padding:calc(var(--sa) + 54px) 20px 86px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:16px;opacity:0;visibility:hidden;transform:scale(.94) translateY(24px);filter:blur(10px);transition:all .8s cubic-bezier(.2,.8,.2,1)}
+.page.on{opacity:1;visibility:visible;transform:none;filter:none}
+.page>*{max-width:560px;width:100%}
+h1,h2{font:italic 600 clamp(30px,8vw,46px)/1.15 'Cormorant Garamond',serif;margin:0;text-shadow:0 0 24px rgba(255,150,210,.8)}
+.name{font:clamp(58px,17vw,104px)/1.1 'Great Vibes',cursive;background:linear-gradient(90deg,#fff,#ffb3d4,#d9c2ff,#fff);background-size:200%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 5s linear infinite;filter:drop-shadow(0 0 18px #ff7eb6)}
+@keyframes sh{to{background-position:200%}}
+p{margin:0}.soft{opacity:.9}
+.card{background:var(--glass);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(14px);border-radius:26px;padding:20px;box-shadow:0 10px 40px rgba(40,0,80,.35)}
+.on .r{animation:rise .9s both}.on .r2{animation:rise .9s .5s both}.on .r3{animation:rise .9s 1s both}.on .r4{animation:rise .9s 1.5s both}.on .r5{animation:rise .9s 2s both}
+@keyframes rise{from{opacity:0;transform:translateY(24px) scale(.95)}}
+.chr{font-size:96px;animation:bob 2.4s ease-in-out infinite;filter:drop-shadow(0 10px 18px rgba(0,0,0,.3));cursor:pointer;user-select:none;display:inline-block}
+@keyframes bob{50%{transform:translateY(-14px) rotate(4deg)}}
+.bub{position:relative;font:italic 600 24px/1.35 'Cormorant Garamond',serif;color:#4a1a63;background:#fff;border-radius:24px;padding:16px 20px;box-shadow:0 0 30px rgba(255,255,255,.5)}
+.bub:before{content:"";position:absolute;top:-12px;left:50%;margin-left:-12px;border:12px solid transparent;border-top:0;border-bottom-color:#fff}
+.h3{height:130px;perspective:600px;display:flex;justify-content:center;align-items:center}
+.h3 div{position:relative;transform-style:preserve-3d;animation:spin 5s linear infinite;width:100px;height:100px}
+.h3 span{position:absolute;inset:0;font-size:96px;line-height:100px;text-align:center;filter:drop-shadow(0 0 14px #ff4d94)}
+@keyframes spin{to{transform:rotateY(360deg)}}
+.glow{font:italic 600 clamp(24px,6.5vw,32px)/1.3 'Cormorant Garamond',serif;text-shadow:0 0 18px #ffb3d4,0 0 40px #ff7eb6}
+.env{font-size:110px;cursor:pointer;animation:bob 2.4s infinite;display:inline-block}
+.letter{text-align:left;font:italic 500 19px/1.7 'Cormorant Garamond',serif;color:#fff;max-height:52vh;overflow:auto;animation:rise 1s both}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.moods{display:grid;gap:10px}.moods button{padding:15px;font-size:17px}
+.moods button.sel{background:linear-gradient(135deg,#ff7eb6,#b58cff);border-color:#fff}
+.msg{min-height:110px;font:italic 600 24px/1.35 'Cormorant Garamond',serif}
+.pop{animation:pop .6s both}@keyframes pop{from{opacity:0;transform:scale(.7)}}
+.dz{display:grid;gap:10px;text-align:left}.dz div{padding:14px 18px}.dz b{font-size:19px}
+.gal{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sky{position:relative;height:250px;border-radius:26px;background:radial-gradient(#1a0b3d,#0a0420);overflow:hidden;border:1px solid rgba(255,255,255,.3)}
+.sky button{position:absolute;background:none;border:0;padding:6px;font-size:28px;box-shadow:none;animation:tw 2.5s infinite}
+.fl{perspective:700px;height:140px;cursor:pointer}
+.fl>div{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .8s}
+.fl.o>div{transform:rotateY(180deg)}
+.fl section{position:absolute;inset:0;backface-visibility:hidden;border-radius:22px;display:flex;align-items:center;justify-content:center;padding:12px;font:700 15px/1.4 Nunito;background:linear-gradient(135deg,#ff7eb6aa,#b58cffaa);border:1px solid #fff6;flex-direction:column;gap:4px}
+.fl section:last-child{transform:rotateY(180deg);background:#fff;color:#5a1f6e;font:italic 600 17px/1.3 'Cormorant Garamond',serif}
+.gift{font-size:120px;cursor:pointer;display:inline-block;animation:shake 2s infinite;filter:drop-shadow(0 0 24px #ffd0ea)}
+.gift.open{animation:none;transform:scale(1.3) rotate(-8deg)}
+@keyframes shake{0%,80%,100%{transform:none}84%{transform:rotate(-8deg)}88%{transform:rotate(8deg)}92%{transform:rotate(-5deg)}}
+.flw{font-size:44px;display:inline-block;animation:bloom 1.2s both}
+@keyframes bloom{from{transform:scale(0) rotate(-90deg);opacity:0}}
+.fly{position:fixed;z-index:70;font-size:40px;pointer-events:none;transition:all 1.6s cubic-bezier(.3,.7,.3,1)}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important}}
+.fr{background:#fff;padding:7px 7px 6px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:rotate(var(--t));cursor:pointer;transition:transform .3s;margin:0;animation:fl2 5s ease-in-out infinite;color:#7a2a6f}
+.fr:hover{transform:rotate(0) scale(1.05);z-index:2}
+@keyframes fl2{50%{translate:0 -6px}}
+.fr img,.fr .add{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 25%;border-radius:4px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#ffd1e8,#d9c2ff);text-align:center;font:700 13px Nunito;flex-direction:column}
+.fr figcaption{font:italic 600 17px 'Cormorant Garamond',serif;padding:5px 2px 2px}
+.fr input{display:none}
+#lb{position:fixed;inset:0;z-index:80;background:rgba(20,5,40,.88);backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:20px}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:78vh;border-radius:14px;border:5px solid #fff;box-shadow:0 0 50px #ff7eb6}
+#lb p{font:italic 600 22px 'Cormorant Garamond',serif;margin:0}
+.page>.ph{position:relative;width:160px;height:160px;margin:4px auto}
+.ph:before{content:"";position:absolute;inset:-7px;border-radius:50%;background:conic-gradient(#ff7eb6,#b58cff,#fff,#ff7eb6);animation:sp 5s linear infinite;filter:blur(3px)}
+.ph img{position:relative;width:100%;height:100%;object-fit:cover;object-position:center 30%;border-radius:50%;border:4px solid #fff;display:block}
+@keyframes sp{to{transform:rotate(360deg)}}
+</style></head><body>
+<div id="stars"></div><div class="bar"><b id="pb"></b></div>
+<header><button class="sm" id="mus">🎵 Musiqa</button><button class="sm" id="rst">↺ Boshidan boshlash</button></header>
+<main id="app"></main>
+<nav><button id="pv">‹ Oldingi</button><span id="cnt">1 / 15</span><button id="nx">Keyingi ›</button></nav>
+<div id="lb"><img alt=""><p></p></div><canvas id="cv"></canvas>
+<script>
+const $=s=>document.querySelector(s),N=15;
+const cv=$('#cv'),cx=cv.getContext('2d');let W,H,P=[];
+function rs(){const d=devicePixelRatio||1;W=cv.width=innerWidth*d;H=cv.height=innerHeight*d;cx.setTransform(d,0,0,d,0,0);W=innerWidth;H=innerHeight}
+rs();addEventListener('resize',rs);
+for(let i=0;i<70;i++){const s=document.createElement('i');s.style.cssText=`left:${Math.random()*100}%;top:${Math.random()*100}%;animation-delay:${Math.random()*3}s`;$('#stars').appendChild(s)}
+const R=(a,b)=>a+Math.random()*(b-a),pick=a=>a[Math.floor(Math.random()*a.length)];
+function amb(){P.push({x:R(0,W),y:H+20,vx:R(-.3,.3),vy:R(-1.1,-.4),g:0,life:0,max:700,ch:pick(['💗','🌸','✨','💜','🦋','🌹','💖']),s:R(14,28),sw:R(0,6)})}
+setInterval(()=>{if(P.length<60)amb()},420);
+function burst(x,y,n=24,chs=['💖','🌸','✨','💗','🌷']){for(let i=0;i<n;i++){const a=R(0,6.28),v=R(2,7);P.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-2,g:.12,life:0,max:R(60,110),ch:pick(chs),s:R(16,30)})}}
+function fw(x,y){const c=pick(['#ff7eb6','#ffd1e8','#b58cff','#fff3a8','#8fe3ff']);for(let i=0;i<46;i++){const a=i/46*6.28,v=R(2,6);P.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,g:.06,life:0,max:R(50,80),col:c,s:R(2,4)})}}
+function rain(chs){for(let i=0;i<30;i++)setTimeout(()=>P.push({x:R(0,W),y:-20,vx:R(-.5,.5),vy:R(2,4),g:0,life:0,max:300,ch:pick(chs),s:R(18,30)}),i*70)}
+(function loop(){cx.clearRect(0,0,W,H);P=P.filter(p=>p.life<p.max&&p.y>-60);for(const p of P){p.life++;p.vy+=p.g;p.x+=p.vx+(p.sw!=null?Math.sin(p.life/30+p.sw)*.5:0);p.y+=p.vy;const al=p.max>600?Math.min(1,p.life/60)*.7:Math.min(1,(p.max-p.life)/25);cx.globalAlpha=Math.max(0,al);if(p.ch){cx.font=p.s+'px serif';cx.fillText(p.ch,p.x,p.y)}else{cx.fillStyle=p.col;cx.beginPath();cx.arc(p.x,p.y,p.s,0,6.3);cx.fill()}}cx.globalAlpha=1;requestAnimationFrame(loop)})();
+addEventListener('pointerdown',e=>{if(!e.target.closest('button,label,.env,.gift,.chr'))burst(e.clientX,e.clientY,8,['💗','✨'])});
+const pg=[],ct=(t,x)=>`<h2 class="r">${t}</h2>${x}`;
+const flowers=['🌸','🌷','🌹','🌺','🌼','💐'];
+const comp=['Sen dunyodagi eng go’zal tabassum egasisan 🌸','Sening borligingning o’zi — mening baxtim ❤️','Sen ajoyib insonsan, buni hech qachon unutma ✨','Sening qalbing oltindan ham qimmat 💛','Sen kuchlisan, chiroylisan va juda qadrlisan 🌷','Sen kulganingda butun olam yorishadi 🌞','Men seni har kuni ko’proq sevaman 💖','Sen bor ekan, hayot chiroyli 🦋','Sen men uchun eng katta sovg’asan 🎁','Sening mehring — mening uyim 🏡'];
+const moods={'Xafaman 😔':['Mening yonimdaman, jonim. Yig’lagingiz kelsa — yig’la, men senga o’z quchog’imni bergan bo’lardim. Bu ham o’tib ketadi, men esa har doim shu yerdaman. 🤍',['💧','🤍','🌸']],'Charchadim 🥺':['Sen bugun juda ko’p narsaga chidading. Endi bir nafas ol, ko’zingni yum. Dam olishga to’liq haqqing bor. Men sen bilan faxrlanaman. 🌙',['🌙','⭐','💤','💜']],'Kayfiyatim yo’q 🌧️':['Yomg’irdan keyin doim kamalak chiqadi. Bugun kayfiyating bo’lmasa ham, sen baribir juda qadrlisan. Men seni hamma holatingda sevaman. 🌈',['🌈','🌷','☀️','💗']],'Tabassum qilgim kelyapti 😊':['Mana shu tabassum! Dunyo hozir ravshanlashdi. Sen kulganingda men ham kulaman. 🥰',['😊','🌻','💖','🎉']]};
+const proms=[['🤝','Hurmat','Men seni har doim hurmat qilaman, fikringni va qalbingni qadrlayman.'],['🕊️','Sabr','Qiyin kunlarda ham sabr qilaman, seni tushunishga harakat qilaman.'],['🛡️','Qo’llab-quvvatlash','Orzularingda yoningda turaman, yiqilsang qo’lingdan tutaman.'],['💞','Sevgi','Sevgimni har kuni so’z bilan ham, ish bilan ham ko’rsataman.']];
+const wishes=['Birga qarish — eng katta orzuyim 👵👴','Bir kun o’z uyimizda gul ekamiz 🌷','Birga ko’p-ko’p sayohat qilamiz ✈️','Har tong seni tabassum bilan uyg’otaman ☀️','Farzandlarimiz sening ko’zlaringdek bo’ladi 👶','Har qiyinchilikni qo’ldan tutib yengamiz 🤝','Sen bilan har kun — bayram 🎉'];
+const lt1=`Aziz Muslima,<br><br>Bu xatni yozayotib yuragim iliq bo’lib ketdi. Sen mening hayotimga nur olib kirding. Sening kulging — eng sevimli musiqam, sening ovozing — eng tinch makonim.<br><br>Ba’zan men yetarlicha aytolmayman, lekin bilgin: sen mening har bir kunimdagi eng yaxshi narsasan. Sen bor ekan, hamma narsa osonroq va chiroyliroq.<br><br>Seni sevaman, Muslima. Ko’proq, ko’proq va yana ko’proq. ❤️`;
+const lt2=`Muslima, jonim,<br><br>Eng muhim gapni oxirida aytmoqchiman. Agar bir kun o’zingni yolg’iz yoki ojiz his qilsang, bu sayt senga menman, deb o’yla. Men seni hech qachon yolg’iz qoldirmayman.<br><br>Sen mukammal bo’lishing shart emas. Charchagan, xafa yoki jim bo’lgan paytingda ham men seni sevaman. Sening ko’z yoshlaringni ham, kulgingni ham bir xil qadrlayman.<br><br>Bilib qo’y: sen bu dunyoda eng go’zal qalblardan birisan. Men senga uylanganim uchun har kuni Xudoga shukr qilaman. 🤍<br><br>Doim seniki,<br>Sening eng yaqin insoning ❤️`;
+function box(c){const s=document.createElement('section');s.className='page';s.innerHTML=c;$('#app').appendChild(s);pg.push(s)}
+box(`<div class="h3 r"><div>${Array.from({length:7},(_,i)=>`<span style="transform:translateZ(${(i-3)*4}px)">❤️</span>`).join('')}</div></div><h2 class="r2">Muslima’s Happy Place ❤️</h2><div class="name r3">Muslima</div><p class="glow r4" style="font-size:24px">Muslima, bu kichkina olam faqat sen uchun ❤️</p><p class="soft r5">Ekranga teging — musiqa boshlanadi 🎵</p>`);
+box(ct('Bir oz tabassum',`<div class="r2"><span class="chr" data-a="hi">🐻</span></div><div class="bub r3">Muslima, bugun ham tabassuming juda kerak!</div><p class="soft r4">Ayiqchani bosib ko’r 🐾</p>`));
+box(ct('Sen Qadrlisan',`<div class="ph r"><img src="images/2.jpg" alt="Muslima" onerror="this.parentNode.remove()"></div><p class="glow r2">Sen oddiy emassan, sen — betakrorsan ✨</p><p class="glow r3">Sen ko’p narsaga arziydigan, kam topiladigan qalbsan 💎</p><p class="glow r4">Sen mening dunyomdagi eng qimmatli sovg’asan 💖</p><p class="glow r5">Buni hech qachon unutma, Muslima.</p>`));
+box(ct('Sening Tabassuming',`<p class="glow r2">Sening tabassuming dunyomni chiroyli qiladi.</p><div id="fb" class="r3" style="min-height:140px;font-size:0">${flowers.map((f,i)=>`<span class="flw" style="animation-delay:${i*.25+.6}s">${f}</span>`).join('')}</div><button class="r4" data-a="bloom">Gul ochilsin 🌷</button>`));
+box(ct('Sevgi Xatini Och',`<div id="env" class="r2"><span class="env" data-a="env">💌</span><p class="soft">Konvertni bosing</p></div><div id="lt" class="card letter" hidden>${lt1}</div>`));
+box(ct('Yurakdan Quchoq',`<div class="r2"><span class="chr" id="bear">🧸</span></div><p class="soft r3">Ayiqcha senga yurak yubormoqchi…</p><button class="big r4" data-a="hug">Quchoq yubor 🤗</button><p id="hm" class="glow"></p>`));
+box(ct('Kayfiyating Qanday?',`<div class="moods r2">${Object.keys(moods).map(k=>`<button data-a="mood" data-k="${k}">${k}</button>`).join('')}</div><div id="mm" class="msg card" style="display:none"></div>`));
+box(ct('Bir Oz Baxt',`<button class="big r2" data-a="up">Kayfiyatimni ko’tar ❤️</button><div id="um" class="msg card pop">Tugmani bos, jonim ✨</div>`));
+box(ct('Sen Eng Yaxshisiga Loyiqsan',`<div class="dz r2">${[['💞','Mehr','Sen doim mehribon munosabatga loyiqsan.'],['🌸','Baxt','Sen quvonchga to’la kunlarga loyiqsan.'],['👑','Hurmat','Sen ardoqlanishga va hurmatga loyiqsan.'],['❤️','Sevgi','Sen so’zsiz, samimiy sevgiga loyiqsan.']].map(a=>`<div class="card"><b>${a[0]} ${a[1]}</b><br>${a[2]}</div>`).join('')}</div>`));
+box(ct('Go’zal Xotiralarimiz',`<p class="soft r2">Rasmni bos — kattalashadi 📷</p><div class="gal r3">${[['1','Sening tabassuming 🌸',-3],['2','Ko’zlaringdagi nur ✨',2],['3','Men, sening uchun 🤍',2]].map(a=>`<figure class="fr" style="--t:${a[2]}deg" data-a="zoom" data-c="${a[1]}"><img src="images/${a[0]}.jpg" alt="${a[1]}"><figcaption>${a[1]}</figcaption></figure>`).join('')}<label class="fr" style="--t:-2deg"><input type="file" accept="image/*" data-a="ph"><div class="add">💗<br>Yana surat qo’shish</div></label></div>`));
+box(ct('Bizning Kichik Kelajagimiz',`<div class="sky r2" id="sky">${wishes.map((w,i)=>`<button data-a="wish" data-k="${i}" style="left:${[10,40,72,22,58,84,45][i]}%;top:${[12,28,10,52,58,40,80][i]}%">⭐</button>`).join('')}</div><div id="wm" class="msg card" style="min-height:90px">Yulduzni bos, orzu ochiladi 🌠</div>`));
+box(ct('Mening Va’dam',`<p class="soft r2">Kartani bosib o’qi</p><div class="grid r3">${proms.map(p=>`<div class="fl" data-a="flip"><div><section><span style="font-size:36px">${p[0]}</span>${p[1]}</section><section>${p[2]}</section></div></div>`).join('')}</div>`));
+box(ct('Sen Uchun Sovg’a',`<div id="gb" class="r2"><span class="gift" data-a="gift">🎁</span></div><div id="gm" class="msg card" style="display:none"></div>`));
+box(ct('Yana Bir Narsa, Muslima',`<div class="card letter r2">${lt2}</div>`));
+box(`<div class="ph r"><img src="images/1.jpg" alt="Muslima" onerror="this.parentNode.remove()"></div><div class="name r">Muslima</div><p class="glow r2">Muslima, dunyoda qancha go’zallik bo’lmasin, men uchun sening tabassuming eng go’zalidir. ❤️</p><p class="r3" style="font:italic 600 21px/1.4 'Cormorant Garamond',serif">Xafa bo’lgan kunlaringda ham esingda bo’lsin: sen juda qadrli, juda sevimli va juda go’zal qalb egasisan.</p><button class="big r4" data-a="again">Yana bir bor tabassum qil ❤️</button>`);
+let cur=0,fwT;
+function go(i){cur=(i+N)%N;pg.forEach((p,k)=>p.classList.toggle('on',k==cur));$('#cnt').textContent=`${cur+1} / ${N}`;$('#pb').style.width=(cur+1)/N*100+'%';pg[cur].scrollTop=0;clearInterval(fwT);if(cur==0)setTimeout(()=>burst(innerWidth/2,innerHeight/3,30),600);if(cur==N-1)show()}
+function show(){clearInterval(fwT);let n=0;rain(['💖','🌸','🌷','✨']);fwT=setInterval(()=>{fw(R(W*.15,W*.85),R(H*.12,H*.5));if(++n>14)clearInterval(fwT)},450)}
+$('#nx').onclick=()=>go(cur+1);$('#pv').onclick=()=>go(cur-1);$('#rst').onclick=()=>{go(0);$('#lt').hidden=true;$('#env').hidden=false};
+addEventListener('keydown',e=>{if(e.key=='ArrowRight')go(cur+1);if(e.key=='ArrowLeft')go(cur-1)});
+let tx;addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>90&&!e.target.closest('.sky,.letter'))go(cur+(d<0?1:-1))},{passive:true});
+function fly(el,ch){const r=el.getBoundingClientRect(),f=document.createElement('div');f.className='fly';f.textContent=ch;f.style.left=r.left+r.width/2+'px';f.style.top=r.top+'px';document.body.appendChild(f);requestAnimationFrame(()=>{f.style.transform=`translate(${R(-30,30)}px,-${innerHeight*.45}px) scale(2.2)`;f.style.opacity=0});setTimeout(()=>f.remove(),1700)}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-a]');if(!t)return;const a=t.dataset.a,x=e.clientX,y=e.clientY;
+if(a=='hi'){burst(x,y,16);t.textContent=pick(['🐻','🐼','🐨']);}
+if(a=='bloom'){const b=$('#fb');b.insertAdjacentHTML('beforeend',`<span class="flw">${pick(flowers)}</span>`.repeat(3));burst(x,y,22,['🌸','💗','🦋'])}
+if(a=='env'){t.parentElement.hidden=true;$('#lt').hidden=false;burst(innerWidth/2,innerHeight/2,40)}
+if(a=='hug'){for(let i=0;i<7;i++)setTimeout(()=>fly($('#bear'),pick(['❤️','💗','💖'])),i*180);$('#hm').className='glow pop';$('#hm').textContent='Bu quchoq senga, Muslima. Men yoningdaman — jim bo’lsang ham, xafa bo’lsang ham. 🤍'}
+if(a=='mood'){document.querySelectorAll('.moods button').forEach(b=>b.classList.toggle('sel',b==t));const m=moods[t.dataset.k],o=$('#mm');o.style.display='block';o.className='msg card pop';o.textContent=m[0];rain(m[1]);burst(x,y,20,m[1])}
+if(a=='up'){$('#um').className='msg card pop';$('#um').textContent=pick(comp);$('#um').style.animation='none';void $('#um').offsetWidth;$('#um').style.animation='';burst(x,y,28);rain(['💖','🌸'])}
+if(a=='flip')t.classList.toggle('o');
+if(a=='wish'){$('#wm').className='msg card pop';$('#wm').textContent=wishes[t.dataset.k];t.textContent='🌟';burst(x,y,14,['✨','⭐'])}
+if(a=='gift'&&!t.classList.contains('open')){t.classList.add('open');t.textContent='🎊';burst(x,y,70,['✨','💖','🌸','🎉','💜']);const m=$('#gm');m.style.display='block';m.className='msg card pop';m.innerHTML='Mening sovg’am — sening o’zing, Muslima. Sen borliging bilan hayotimni to’ldirding. Seni juda sevaman. 💝'}
+if(a=='zoom'){const l=$('#lb');l.querySelector('img').src=t.querySelector('img').src;l.querySelector('p').textContent=t.dataset.c;l.classList.add('on');burst(x,y,14)}
+if(a=='again'){show();burst(innerWidth/2,innerHeight/2,60,['😊','💖','🌸','✨'])}
+});
+document.addEventListener('change',e=>{if(e.target.dataset.a=='ph'&&e.target.files[0]){const f=e.target.files[0],u=URL.createObjectURL(f),d=e.target.nextElementSibling;d.outerHTML=`<img src="${u}" alt="Xotira">`;burst(innerWidth/2,innerHeight/2,20)}});
+let ac,mt,on=false,started=false;const au=new Audio('music/music.mp3');au.preload='auto';au.volume=.65;
+au.addEventListener('loadedmetadata',()=>{try{au.currentTime=45}catch(e){}});
+au.onended=()=>{au.currentTime=45;au.play()};
+function synth(){ac=ac||new(window.AudioContext||window.webkitAudioContext)();ac.resume();let i=0;const sc=[523,659,784,659,880,784,659,587,523,659,784,1046,880,784,659,587];clearInterval(mt);mt=setInterval(()=>{const o=ac.createOscillator(),g=ac.createGain();o.type='sine';o.frequency.value=sc[i++%sc.length];g.gain.setValueAtTime(.0001,ac.currentTime);g.gain.exponentialRampToValueAtTime(.07,ac.currentTime+.05);g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+1.1);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+1.2)},520)}
+$('#mus').onclick=()=>{on=!on;$('#mus').textContent=on?'🔇 To’xtat':'🎵 Musiqa';if(on){if(au.currentTime<45&&au.readyState>0)au.currentTime=45;au.play().catch(synth)}else{au.pause();clearInterval(mt)}};
+$('#lb').onclick=()=>$('#lb').classList.remove('on');
+addEventListener('click',e=>{if(started)return;started=true;if(!on&&!e.target.closest('#mus'))$('#mus').click()},true);
+go(0);
+</script></body></html>
